@@ -1,0 +1,12 @@
+Feature: YouTube
+
+  @Regression
+  Scenario: As user
+            I want search a nwe video
+            using required fields
+            so that my search to be carried out
+
+    Given I have open my YouTube app
+    When I click [search] button in main activity
+    And I type 'miley cyrus malibu' in [video name] textbox in YouTube manager Activity
+    Then the search 'miley cyrus malibu' is displayed
